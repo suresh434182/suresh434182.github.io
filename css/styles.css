@@ -1,0 +1,820 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  color: #292b2c;
+  background: none;
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+/******** Homepage Content Begins *********/
+
+/********* Navbar Begins***********/
+
+#navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3); */
+  color: gray;
+  font-family: "Lora", serif;
+  background-color: white;
+}
+
+.logo {
+  padding: 5px;
+}
+#logo-img {
+  width: 120px;
+}
+
+.block-display div {
+  margin: 20px 0px 20px 0px;
+  display: block;
+  font-weight: bold;
+}
+
+#nav-list a {
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+  border-top: 3px solid white;
+  font-size: 18px;
+}
+
+#nav-list li a.active {
+  color: #461165;
+}
+
+#nav-list .nav-link {
+  color: #999da0;
+}
+#nav-list a:hover {
+  color: #461165;
+}
+
+.dropbtn {
+  background-color: #461165;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  color: #f1f1f1;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  opacity: 0.8;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: max-content;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  /* text-decoration: none; */
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.show {
+  display: block;
+}
+/********* Navbar Ends***********/
+
+.hero {
+  background-color: white;
+  height: 100vh;
+  position: relative;
+  color: #461165;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  font-family: "Lora", serif;
+}
+
+.hero .content h1 {
+  font-weight: 700;
+}
+
+.hero .content span {
+  font-size: 25px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.hero .content img {
+  border-radius: 50%;
+  margin-right: 100px;
+  position: absolute;
+  top: 30%;
+  left: 17.8%;
+}
+.imageBack {
+  height: 290px;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.contentImage {
+  margin-right: 120px;
+}
+
+.contentImage img {
+  border-radius: 100%;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  margin-right: 100px;
+}
+
+.hero * {
+  z-index: 10;
+}
+
+.object {
+  animation: MoveUpDown 1.5s linear infinite;
+  position: absolute;
+  left: 850px;
+  top: 375px;
+}
+
+.object img {
+  width: 40px;
+}
+
+/******** Homepage Content Ends *********/
+
+/******* About Me Content Begins ********/
+.container.aboutme::before {
+  display: block;
+  content: " ";
+  margin-top: -160px;
+  height: 160px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.aboutme {
+  text-align: center;
+  font-family: "Lora", serif;
+}
+
+.aboutme h1,
+h2 {
+  font-weight: bold;
+  color: #461165;
+}
+
+.aboutme p {
+  padding: 10px 70px 10px 70px;
+}
+
+.social {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.social a {
+  color: #6c757d;
+  padding: 5px;
+  border-radius: 10%;
+  font-size: 25px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social a:hover {
+  color: #461165;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+.buttonDiv {
+  margin: 30px 0px 50px 0px;
+}
+
+.resumeButton {
+  padding: 8px 25px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #6c757d;
+  border-radius: 5px;
+  color: white;
+}
+
+.resumeButton:hover {
+  text-decoration: none;
+  background-color: #461165;
+  color: white;
+}
+
+.skill {
+  margin-top: 100px;
+}
+
+.card-block {
+  margin-top: 20px;
+  padding: 1.5rem;
+}
+
+h6 {
+  font-size: 16px !important;
+}
+
+.nameSpan {
+  float: left;
+}
+
+.percentSpan {
+  float: right;
+  margin-right: 20%;
+}
+
+.proj-progress-card .progress {
+  height: 6px;
+  overflow: visible;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+.proj-progress-card .progress .progress-bar {
+  position: relative;
+}
+
+.progress .progress-bar {
+  height: 100%;
+  background-color: #461165;
+  animation-iteration-count: 1;
+  border-radius: 20px;
+}
+
+.ani1 {
+  animation: progress-animation1 2s infinite;
+}
+
+.ani2 {
+  animation: progress-animation2 2s infinite;
+}
+
+.ani3 {
+  animation: progress-animation3 2s infinite;
+}
+
+@keyframes progress-animation1 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes progress-animation2 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes progress-animation3 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+/******* About Me Content Ends ********/
+
+/******* Portfolio Content Begins ********/
+.portfolio::before {
+  display: block;
+  content: " ";
+  margin-top: -120px;
+  height: 120px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.portfolio {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.portfolio h2 {
+  margin-bottom: 30px;
+}
+
+.portfolio .card {
+  margin-top: 30px;
+}
+.pageBtn {
+  padding: 8px 25px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  font-size: 15px;
+  border: none;
+  background-color: #6c757d;
+  border-radius: 5px;
+  color: white;
+}
+
+.pageBtn:hover {
+  text-decoration: none;
+  background-color: #461165;
+  color: white;
+}
+
+.pageBtn.activeBtn {
+  background-color: #461165;
+}
+.imagesMain {
+  padding: 0;
+  text-align: center;
+}
+.imagebox {
+  position: relative;
+  margin-bottom: 30px;
+  height: 250px;
+  width: 250px;
+}
+
+.imagebox img {
+  vertical-align: middle;
+  height: 250px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.caption {
+  width: 500px;
+  height: 250px;
+  /* background: rgb(142, 36, 170); */
+  background: radial-gradient(
+    circle,
+    rgba(142, 36, 170, 0.7315301120448179) 40%,
+    rgba(60, 20, 140, 1) 87%
+  );
+  opacity: 0;
+  position: absolute;
+  left: 35px;
+  top: 0px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.imagebox:hover .caption {
+  opacity: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  padding: 20px;
+}
+
+.imagebox:hover .caption a {
+  color: white;
+  text-decoration: none;
+  float: left;
+}
+
+.game img {
+  width: 250px;
+}
+
+.gameCap {
+  width: 250px;
+  left: 65px;
+}
+
+.mobile {
+  height: 300px;
+  width: 170px;
+}
+
+.android {
+  margin-left: 25%;
+}
+
+.mobTitle {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.card-text a:hover {
+  text-decoration: none;
+}
+
+.mobPara {
+  padding: 10px;
+}
+
+.capIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+}
+.capCam {
+  background-color: white;
+  border-radius: 10%;
+  color: rgba(60, 20, 140, 1);
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.8s ease;
+}
+
+.capCam:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+/******* Portfolio Content Ends ********/
+
+/******* Award Content Begins ********/
+.table.award-table {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+/******* Award Content Ends ********/
+
+/******* Experience Content Begins ********/
+.experience {
+  margin-top: 70px;
+}
+
+.exp-tabs {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab.col-4 {
+  padding: 0px;
+  margin-left: 50px;
+}
+
+.exp-tabs .col-8 {
+  max-width: 60%;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  /* border: none; */
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #d8bfd8;
+}
+
+.tab button.active {
+  background-color: #461165;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px 20px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.tabcontent h5,
+h6 {
+  text-align: center;
+}
+
+.youtube-nos {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.youtube-nos iframe {
+  width: 45%;
+}
+/******* Experience Content Ends ********/
+
+/******* Blog Content Begins ********/
+.blogs::before {
+  display: block;
+  content: " ";
+  margin-top: -120px;
+  height: 120px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.pageBtn.blogActiveBtn {
+  background-color: #461165;
+}
+
+.cardFoot {
+  font-family: "Montserrat", sans-serif;
+  float: right;
+  cursor: pointer;
+  color: #6c757d !important;
+  transition: tr;
+}
+
+.cardFoot:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blogs {
+  margin-top: 80px;
+}
+/******* Blog Content Ends ********/
+
+/******* Contact Us Begins ********/
+.footer {
+  color: white;
+  background-color: #6c757d;
+  font-family: Lora, serif;
+  text-align: center;
+}
+
+.container.contact-us {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn.btn-primary.send {
+  background-color: transparent;
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.btn.btn-primary.send:hover {
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-us .contact-form {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.contact-form form {
+  margin-top: 30px;
+}
+
+.contact-form form .form-group {
+  display: flex;
+}
+
+.contact-form form .form-group label {
+  width: 80px;
+  text-align: left;
+}
+
+.contact-form form .form-group input {
+  width: 250px;
+  font-size: 14px;
+}
+
+.contact-form form .form-group textarea {
+  width: 250px;
+  font-size: 14px;
+}
+
+.alert.alert-success.thankyou_message {
+  position: absolute;
+  top: 40%;
+  right: 9%;
+  text-align: center;
+  width: 300px;
+}
+
+.alert.alert-success.thankyou_message button:focus {
+  outline: none;
+}
+
+hr {
+  display: none;
+}
+/******* Contact Us Ends ********/
+
+/****** Responsiveness ******/
+@media (max-width: 1300px) {
+  .object a img {
+    display: none;
+  }
+}
+
+/******Medium Devices Only*****/
+@media (max-width: 1199px) {
+  .contentImage img {
+    height: 250px;
+    width: 235px;
+  }
+
+  .contentText h1 {
+    font-size: 35px;
+  }
+
+  .hero .content span {
+    font-size: 20px;
+  }
+
+  .percentSpan {
+    margin-right: 0;
+  }
+
+  .proj-progress-card .progress {
+    width: 100%;
+  }
+
+  .caption {
+    left: 230px;
+  }
+
+  .gameCap {
+    left: 35px;
+  }
+}
+
+/******Small Devices Only*****/
+@media (min-width: 768px) and (max-width: 991px) {
+  .aboutme h1 {
+    display: none;
+  }
+  .caption {
+    left: 110px;
+  }
+
+  .gameCap {
+    left: 55px;
+  }
+
+  .container.contact-us {
+    flex-direction: column;
+  }
+
+  hr#hrId {
+    display: block;
+    margin: 40px 0px;
+  }
+}
+
+/******Extra Small Devices Only*****/
+@media (max-width: 767px) {
+  .aboutme h1 {
+    display: none;
+  }
+  .hero {
+    height: 80vh;
+  }
+
+  .hero .content {
+    flex-direction: column;
+  }
+
+  .imageBack {
+    width: 0;
+    height: 480px;
+  }
+
+  .contentText h1 {
+    font-size: 32px;
+  }
+
+  .hero .content span {
+    font-size: 18px;
+  }
+
+  .contentImage img {
+    height: 250px;
+    width: 235px;
+    margin-left: 8%;
+  }
+
+  .aboutme {
+    margin-top: 120px;
+  }
+
+  .imagebox img {
+    width: 440px;
+    height: 250px;
+  }
+
+  .caption {
+    width: 440px;
+    height: 250px;
+    left: 48px;
+  }
+
+  .game img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .gameCap {
+    width: 250px;
+    height: 250px;
+    left: 145px;
+  }
+
+  .container.contact-us {
+    flex-direction: column;
+  }
+
+  hr#hrId {
+    display: block;
+    margin: 40px 0px;
+  }
+}
+
+/*****Extra extra small devices****/
+@media (max-width: 479px) {
+  .imagebox img {
+    width: 380px;
+    height: 250px;
+  }
+
+  .game img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .caption {
+    width: 380px;
+    height: 250px;
+    left: 15px;
+  }
+
+  .gameCap {
+    width: 250px;
+    height: 250px;
+    left: 80px;
+  }
+
+  .container.contact-us {
+    flex-direction: column;
+  }
+}

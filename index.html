@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <title>Suresh Kumar</title>
+  <link rel="icon" href="/images/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body id="home">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+  <script type="text/javascript"></script>
+
+  <header class="hero">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navBar">
+      <div class="container">
+        <!-- Logo Section -->
+        <div class="logo ">
+          <a href="#">
+            <img src="/images/logo.gif" id="logo-img" alt="logo" loading="lazy" />
+          </a>
+        </div>
+        <!-- Navbar Section -->
+        <div class="block-display">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" id="nav-list">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" style="padding-left: 40px">About <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio" style="padding-left: 40px">Portfolio <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#My_Skill" style="padding-left: 40px">My Skills<span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" style="padding-left: 40px">Contact <span
+                    class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Toggle Button Section -->
+        <div class="dropdown d-block d-lg-none menuList">
+          <button onclick="myFunction1()" class="dropbtn" id="menuList">
+            <a></a><span class="navbar-toggler-icon" onclick="myFunction()"></span>
+          </button>
+          <div id="myDropdown1" class="dropdown-content">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#My_Skill">My Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="contentImage">
+        <div class="imageBack"></div>
+        <img src="/images/suresh.jpg" width="270" height="290" class="cIm" />
+      </div>
+
+      <div class="contentText">
+        <h1>Hey, I am Suresh Kumar !</h1>
+        <span class="txt-rotate" data-period="2000"
+          data-rotate='[ "Android Developer ", "Web Developer"]'></span>
+      </div>
+    </div>
+  </header>
+  <div class="container aboutme" id="about" name="about">
+    <h1>Hello, I am Suresh !</h1>
+    <br />
+    <p>
+      I am a Computer Engineering Student interested in Android Development,
+      and Web Development! I love Watching Stand-up Comedy, and
+      talking about Comedy . I enjoy when solve problem .
+    </p>
+    
+    <div class="social">
+      <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100009345102216" target="_blank"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/sureshk77108738" target="_blank"></a>
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/suresh-kumar-307284190/" target="_blank"></a>
+      <a class="fa fa-github" href="https://github.com/suresh434182" target="_blank"></a>
+      <a class="fa fa-gitlab" href="https://gitlab.com/suresh434182" target="_blank"></a>
+      <a class="fa fa-instagram" href="https://www.instagram.com/suresh70704341/" target="_blank"></a>
+    </div>
+
+    <div class="buttonDiv">
+      <a href="files/Suresh_Resume_9.pdf" target="_blank">
+        <button type="button" class="resumeButton">
+          <span>View Resume </span>
+        </button>
+      </a>
+      <a href="files/Suresh_Resume_9.pdf" download="">
+        <button type="button" class="resumeButton">
+          <i class="fa fa-download"></i>
+        </button>
+      </a>
+    </div>
+   <!--My Skill Section -->
+     <div class="skill">
+      <h2 style="font-weight: bold;">My Skills</h2>
+      <div>
+        <div class="proj-progress-card">
+          <div class="card-block">
+            <div class="row">
+              <div class="col-xl-6">
+                <span class="nameSpan">HTML/CSS</span>
+                <span class="percentSpan" data-target="50">50</span>
+                <div class="progress">
+                  <div class="progress-bar ani1" style="width:50%"></div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <span class="nameSpan">Java</span>
+                <span class="percentSpan" data-target="40">70</span>
+                <div class="progress">
+                  <div class="progress-bar ani2" style="width:70%"></div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <span class="nameSpan">C++</span>
+                <span class="percentSpan" id="spanNum" data-target="80%">80</span>
+                <div class="progress">
+                  <div class="progress-bar ani1" style="width:80%"></div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <span class="nameSpan">dot net</span>
+                <span class="percentSpan" data-target="60">75</span>
+                <div class="progress">
+                  <div class="progress-bar ani3" style="width:75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio" class="portfolio">
+      <h2 style="font-weight: bold">Portfolio</h2>
+      <button id="showPage1Btn"
+       data-launch-view="page1"
+        class="pageBtn activeBtn">
+        Android
+      </button>
+      <button id="showPage2Btn" data-launch-view="page2" class="pageBtn">
+       Web
+      </button>
+
+      <div class="view" id="page1">
+        <div class="imagesMain row">
+          <div class="imagebox col-sm">
+            <img src="./images/projects/Android/unnamed (1).webp" width="200"/>
+            <div class="caption">
+              <div class="capIcon">
+                <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1)"
+                  href="https://github.com/Super-Cadence/Cadence" target="blank"></a>
+              </div>  
+              <a href="#" style="color: white">P droid (Productivity Tool)</a>
+            </div>
+          </div>
+          <div class="imagebox col-sm">
+            <img src="./images/projects/Android/whatsapp.jpg" />
+            <div class="caption">
+              <div class="capIcon">
+                <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1)"
+                  href="https://github.com/suresh434182/MyWhatsApp" target="blank"></a>
+              </div>
+              <a href="#" style="color: white">Whatsapp Clon</a>
+            </div>
+          </div>
+          <div class="imagebox col-sm">
+            <img src="./images/projects/Android/BAnking.webp" />
+
+            <div class="caption">
+              <div class="capIcon">
+                <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1)"
+                  href="https://github.com/suresh434182/My_banking" target="blank"></a>
+              </div>
+              <a href="#" style="color: white">Basic Banking With Dummy Data</a>
+            </div>
+          </div>
+          <div class="imagebox col-sm">
+            <img src="./images/projects/Android/Donate.jpeg" />
+            <div class="caption">
+              <div class="capIcon">
+                <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1)"
+                  href="https://github.com/suresh434182/Mycontribute" target="blank"></a>
+              </div>
+              <a href="#" style="color: white">Contribute with any community using rozarpay</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="view" id="page2">
+        <div class="imagesMain row">
+          <div class="imagebox col-sm">
+            <img src="./images/projects/Web/R.jpg" />
+           
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <!-- Portfolio Section Ends -->
+
+    
+
+    <!-- Award Section Begins -->
+    <!-- <div class="award">
+      <h2 style="font-weight: bold">Scholarships and Awards</h2>
+      <table class="table table-bordered award-table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 60%">Award/Scholarship</th>
+            <th scope="col" style="width: 30%">Awarded By</th>
+            <th scope="col" style="width: 10%">Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FuseMachines AI Fellowship 2022</td>
+            <td>FuseMachines</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Hack-A-Week Winner (Category - FinTech)</td>
+            <td>LOCUS</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>
+              Full Scholarship Recipient of NAAMI Winter School of AI, 2021
+            </td>
+            <td>NAAMI</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>
+              Ncell Excellence Scholarship - Yearwise Top Female Student
+            </td>
+            <td>Ncell</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Grace Hopper Celebration Student Scholar</td>
+            <td>AnitaB.org</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Women Leaders in Technology Fellowship 2020/21</td>
+            <td>WLiT Nepal</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>
+              Ncell Excellence Scholarship - Yearwise Top Female Student
+            </td>
+            <td>Ncell</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>Rajan Karki Memorial Outstanding Student Award</td>
+            <td>St. Xavier's College, Maitighar</td>
+            <td>2018</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+    <!-- Award Section Ends -->
+
+    <!-- Blogs Section Begins -->
+    
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container contact-us">
+      <div>
+        <p>
+          <strong>Address</strong>
+          <br />
+         Atka Bagodar Giridih
+          <br />
+          Jharkhand , India
+        </p>
+        <p>
+          <strong>Email</strong>
+          <br />
+        suresh434182@gmail.com
+        </p>
+        <hr style="border-top: 1px solid white" id="hrId" />
+      </div>
+      <div>
+      
+        <div>
+          <a class="btn btn-outline-light btn-floating m-1 footBtn" href="https://www.facebook.com/profile.php?id=100009345102216"
+            role="button">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 footBtn" href="https://twitter.com/sureshk77108738"
+            role="button">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 footBtn"
+            href="https://www.instagram.com/suresh70704341/" role="button">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 footBtn"
+            href="https://www.linkedin.com/in/suresh-kumar-307284190/" role="button">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 footBtn" href="https://github.com/suresh434182" role="button">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <hr style="border-top: 1px solid white" id="hrId" />
+      </div>
+      <div class="contact-form">
+        <h5>Say Hi!</h5>
+        <form class="gform" method="POST"
+          action="https://script.google.com/macros/s/AKfycbxkTVSCFX32iEX2cuhtQcpLIHkOltcciOCOmIo5/exec">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="What should I call you?"
+              required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea type="text" class="form-control" id="message" name="message" placeholder="Enter your message"
+              required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <div>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Where do I reach you?"
+                required />
+              <small id="emailHelp" class="form-text" style="font-size: 12px" >I'll never share your email with anyone
+                else.</small>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary send">Send</button>
+
+          <div class="alert alert-success thankyou_message" role="alert" style="display: none">
+            Thanks for contacting. <br />I will get back to you soon!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright: Suresh Kumar
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- Scripts -->
+  <script src="/javascripts/introAnimation.js"></script>
+  <script src="/javascripts/linkActive.js"></script>
+  <script src="/javascripts/counter.js"></script>
+  <script src="/javascripts/pageChange1.js"></script>
+  <script src="/javascripts/pageChange2.js"></script>
+  <script src="/javascripts/toggle.js"></script>
+  <script src="/javascripts/expTabs.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="/javascripts/form-submission-handler.js"></script>
+  <script>
+    $("div.alert .close").on("click", function () {
+      console.log("Click");
+      $(this).parent().hide();
+    });
+  </script>
+</body>
+
+</html>
